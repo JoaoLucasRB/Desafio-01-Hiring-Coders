@@ -76,6 +76,16 @@ export function SubscriptionForm() {
       currentSubscriptions[email] = subscription;
     }
     localStorage.setItem("subscriptions", JSON.stringify(currentSubscriptions));
+    Swal.fire({
+      title: 'Success..',
+      text: "You've successfully subscribed to our newsletter",
+      icon: "success",
+      confirmButtonText: "Cool!",
+      confirmButtonColor: "#EBA417"
+    });
+    setName("");
+    setEmail("");
+    setInterests("");
   }
 
   return (
