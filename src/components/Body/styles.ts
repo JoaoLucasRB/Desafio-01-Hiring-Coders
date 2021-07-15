@@ -1,4 +1,6 @@
-.bodyContainer {
+import styled from 'styled-components';
+
+export const Container = styled.main`
   max-width: 1120px;
   margin: 0 auto;
   height: calc(100vh - 5rem);
@@ -8,13 +10,13 @@
   align-items: center;
   justify-content: space-between;
 
-  
+
   @media (max-width: 1023px) {
     flex-direction: column;
   }
-}
+`
 
-.hero {
+export const Hero = styled.section`
   color: var(--text-primary);
   max-width: 560px;
 
@@ -45,8 +47,8 @@
     }
   }
 
-  
+
   @media (max-width: 1023px) {
     margin-bottom: 5rem;
   }
-}
+`

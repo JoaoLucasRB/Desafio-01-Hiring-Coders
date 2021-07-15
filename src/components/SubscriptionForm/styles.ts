@@ -1,9 +1,11 @@
-.formContainer {
+import styled from 'styled-components';
+
+export const Container = styled.form`
   max-width: 560px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+
   input, textarea {
     background: var(--gray);
     color: var(--input-text);
@@ -60,5 +62,4 @@
       margin-bottom: 5rem;
     }
   }
-  
-}
+`

@@ -1,7 +1,7 @@
 import Swal from 'sweetalert2';
 import { FormEvent } from 'react';
 import { useState } from 'react';
-import './styles.scss';
+import { Container } from './styles';
 
 interface SubscriptionObject {
   name: string,
@@ -89,7 +89,7 @@ export function SubscriptionForm() {
   }
 
   return (
-    <form className="formContainer" onSubmit={handleSubmit}>
+    <Container onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Name"
@@ -111,6 +111,6 @@ export function SubscriptionForm() {
         <p>Separeted by <span>,</span></p>
       </div>
       <button type="submit">Subscribe now</button>
-    </form>
+    </Container>
   )
 }

@@ -1,13 +1,14 @@
 
 import { Body } from './components/Body';
 import { Header } from './components/Header';
-import './styles/global.scss';
+import { GlobalStyle } from './styles/global';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Body />
+      <GlobalStyle />
     </div>
   );
 }

@@ -1,10 +1,10 @@
 import { SubscriptionForm } from '../SubscriptionForm';
-import './styles.scss';
+import { Container, Hero } from '../Body/styles';
 
 export function Body() {
   return (
-    <main className="bodyContainer">
-      <section className="hero">
+    <Container>
+      <Hero>
         <span>👏 Hey, welcome!</span>
         <h1>
           Interested in finding <br />
@@ -15,8 +15,8 @@ export function Body() {
           Subscribe to our newsletter and stay inside our <br />
           <span>best deals this black friday</span>
         </p>
-      </section>
+      </Hero>
       <SubscriptionForm />
-    </main>
+    </Container>
   );
 }
